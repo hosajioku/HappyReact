@@ -1,4 +1,5 @@
 import React from 'react'
+import happy from '../assets/happy.jpeg'; 
 
 const AboutPortfolio = () => {
   return (
@@ -11,7 +12,11 @@ const AboutPortfolio = () => {
 <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-xl overflow-hidden shadow-2xl">
 <div className="absolute inset-0 bg-sky-200 blur-2xl opacity-30 animate-pulse rounded-xl"></div>
 <div className="relative w-full h-full bg-white flex items-center justify-center border border-sky-100">
-<span className="text-gray-500 text-sm">Your Photo Here</span>
+      <img
+        src={happy} 
+        alt="My Photo"
+        className="w-full h-full object-cover"
+      />
 </div>
 </div>
 </div>
